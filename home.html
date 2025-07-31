@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h2>Welcome!</h2>
+    <p>You are logged in.</p>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <script>
+    // If not logged in, redirect to login
+    if (!localStorage.getItem("loggedInUser")) {
+      window.location.href = "login.html";
+    }
+
+    function logout() {
+      localStorage.removeItem("loggedInUser");
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
