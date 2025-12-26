@@ -25,9 +25,10 @@ function login() {
     localStorage.setItem("loggedInUser", username);
     msg.textContent = "Login successful! Redirecting...";
     setTimeout(() => {
-      window.location.href = "home.html";
+      window.location.href = "dashboard.html";
     }, 1000);
   } else {
     msg.textContent = "Invalid credentials.";
   }
 }
+

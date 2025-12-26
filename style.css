@@ -1,32 +1,69 @@
+/* Body styling */
 body {
-  font-family: sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 0;
 }
 
+/* Form container */
 .form-container {
-  background-color: #fff;
-  padding: 25px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #ccc;
-  width: 300px;
+  background-color: #ffffff;
+  padding: 35px 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+/* Input fields */
 input {
   width: 100%;
-  margin: 8px 0;
-  padding: 10px;
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
+input:focus {
+  border: 1px solid #667eea;
+  box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+}
+
+/* Buttons */
 button {
   width: 100%;
-  padding: 10px;
-  margin-top: 10px;
-  background-color: #4CAF50;
+  padding: 12px;
+  margin-top: 15px;
+  background-color: #667eea;
   border: none;
+  border-radius: 8px;
   color: white;
+  font-size: 16px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #5a67d8;
+  transform: translateY(-2px);
+}
+
+/* Message text */
+#signupMsg, #loginMsg {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #333;
 }
