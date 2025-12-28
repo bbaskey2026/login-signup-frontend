@@ -1,18 +1,6 @@
 Login & Signup Frontend Demo
 A simple authentication demo application using HTML, CSS, and JavaScript with localStorage for data persistence.
-Project Structure
-LOGIN-SIGNUP-FRONTEND/
-├── html/
-│   ├── dashboard.html    # User dashboard page (displays after login)
-│   ├── home.html         # Landing/home page
-│   ├── login.html        # Login form page
-│   └── signup.html       # Registration form page
-├── script/
-│   ├── dashboard.js      # Dashboard page logic
-│   └── script.js         # Shared authentication logic
-├── style/
-│   └── style.css         # Global styling (dark mode theme)
-└── README.md             # This file
+
 Features
 
 User Registration: Create new accounts with email and password
